@@ -14,8 +14,8 @@ before_script:
   - cd android
   - git config --global user.name "Nikita Krapivin"
   - git config --global user.email "alienoom@yandex.ru"
-  - ../repo init -u https://github.com/LineageOS/android.git -b cm-14.1
   - git config --global color.ui false
+  - ../repo init -u https://github.com/LineageOS/android.git -b cm-14.1
   - ../repo sync -j 4 -c
 
 script:
