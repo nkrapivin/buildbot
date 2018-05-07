@@ -19,4 +19,7 @@ before_script:
   - ../repo sync -j 4 -c
 
 script:
+  - cd android
+  - pwd
   - source build/envsetup.sh
+  - echo HOOORAY! NOW YOU CAN DO YOUR WORK!
