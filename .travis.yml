@@ -16,7 +16,7 @@ before_script:
   - git config --global user.email "alienoom@yandex.ru"
   - git config --global color.ui false
   - ../repo init -u https://github.com/LineageOS/android.git -b cm-14.1 > /dev/null 2>&1
-  - travis_wait ../repo sync -j 4 -c > /dev/null 2>&1
+  - travis_wait 9 ../repo sync -j 4 -c > /dev/null 2>&1
 
 script:
   - cd android
