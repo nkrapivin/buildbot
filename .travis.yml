@@ -10,7 +10,7 @@ before_script:
   - sudo apt-get --assume-yes install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev libesd0-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev openjdk-7-jdk > /dev/null 2>&1
   - curl https://storage.googleapis.com/git-repo-downloads/repo > repo && chmod a+x repo
   - mkdir android && cd android && git config --global user.name "Nikita Krapivin" && git config --global user.email "alienoom@yandex.ru" && git config --global color.ui false
-  - ../repo init -u https://github.com/LineageOS/android.git -b cm-14.1 > /dev/null 2>&1
+  - ../repo init --depth=1 -u https://github.com/LineageOS/android.git -b cm-14.1 > /dev/null 2>&1
   - ../repo sync -j 4 -c
 
 script:
